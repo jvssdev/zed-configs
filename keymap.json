@@ -23,17 +23,26 @@
           "close_pinned": false
         }
       ],
-      "space s g": "file_finder::Toggle"
+      "space s f": "file_finder::Toggle",
+      "space s g": "pane::DeploySearch",
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "ProjectSearchBar",
     "bindings": {
-      "r": "project_panel::Rename",
-      "l": "project_panel::Open",
-      "d": "project_panel::Delete",
-      "a": "project_panel::NewFile"
-      // "a": "project_panel::NewDirectory",
+      "space s g": "search::FocusSearch"
+    }
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "space s g": "search::FocusSearch"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "space s g": "project_search::ToggleFocus"
     }
   },
   {
